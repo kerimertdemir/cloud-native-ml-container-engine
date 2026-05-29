@@ -1,0 +1,1 @@
+# AWS Lambda resmi imajı`nFROM public.ecr.aws/lambda/python:3.11`n`nCOPY requirements.txt ${LAMBDA_TASK_ROOT}`n`nRUN pip install --no-cache-dir -r requirements.txt`n`nCOPY inference.py ${LAMBDA_TASK_ROOT}`n`nCMD [ "inference.handler" ]
